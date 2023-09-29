@@ -1,0 +1,56 @@
+<nav
+  class="navbar navbar-dark navbar-fixed-top"
+  style="background-color: #2874f0"
+>
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Lifestyle Store</a>
+    </div>
+    <form class="navbar-form navbar-left">
+      <div *ngIf="menuType! === 'seller'" class="form-group">
+        <input
+          type="text"
+          #searchInput (keyup)="searchProduct($event)" (blur)="hideSearch()"
+          placeholder="Search for Products"
+          class="form-control"
+        />
+        <button class="btn btn-default" (click)="submitSearch(searchInput.value)">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+        <ul class="suggested-search" *ngIf="searchResult">
+          <li *ngFor="let item of searchResult">
+            <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </form>
+    <!-- Default header -->
+    <div [ngSwitch]="menuType">
+      <ul *ngSwitchCase="'default'" class="nav navbar-nav navbar-right">
+        <li><a routerLink="">Home<span class="badge"></span></a></li>
+        <li><a routerLink="seller-auth">Seller<span class="badge"></span></a></li>
+        <li><a routerLink="login"><span class="glyphicon glyphicon-log-out"></span> User Login/Sign-up</a></li>
+        <li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart({{cartItems}})<span class="badge"></span ></a></li>
+      </ul>
+
+      <!-- User Login header -->
+      <ul *ngSwitchCase="'user'" class="nav navbar-nav navbar-right">
+        
+        <li><a routerLink="">Home<span class="badge"></span></a></li>
+        <li><a>{{ userName | titlecase }}</a></li>
+        <li><a routerLink="my-orders"><span class="glyphicon glyphicon-log-out"></span> My Orders</a></li>
+        <li><a routerLink="login" (click)="userLogout()" ><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        <li><a [routerLink]="cartItems > 0 ? 'cart-page' : null"
+            ><span class="glyphicon glyphicon-shopping-cart"></span> Cart{{cartItems}}<span class="badge">
+        </span></a></li>
+      </ul>
+      <!-- Seller Login header -->
+      <ul *ngSwitchCase="'seller'" class="nav navbar-nav navbar-right">
+        <li><a routerLink="seller-add-products">Add Product</a></li>
+        <li><a routerLink="seller-home">Product List</a></li>
+        <li><a (click)="logout()"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+        <li><a href="#">{{ sellerName | titlecase }}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

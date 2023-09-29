@@ -1,0 +1,104 @@
+{
+  "seller": [
+    {
+      "name": "San Anderson",
+      "email": "San@gmail.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "San Sidhu",
+      "email": "San@gmial.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "tony",
+      "password": "abc123",
+      "email": "tony@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Niv",
+      "password": "abc123",
+      "email": "Niv@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "Jai",
+      "password": "abc123",
+      "email": "Jai@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Goa",
+      "password": "abc123",
+      "email": "Goa@gmail.com",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "name": "HB Labtop",
+      "price": "50000",
+      "category": "Electronics",
+      "color": "Silver",
+      "image": "https://www.91-cdn.com/hub/wp-content/uploads/2022/07/Top-laptop-brands-in-India.jpg",
+      "description": "This is awesome new product from Samsung",
+      "id": 1
+    },
+    {
+      "name": "IPhone 14",
+      "price": "100000",
+      "category": "Mobile Phones",
+      "color": "Silver",
+      "description": "Next generation IPhone series",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": 2
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "3000",
+      "category": "Shoes",
+      "color": "Black",
+      "description": "Best shoes for Running",
+      "image": "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/1eeaacc0-e07c-4024-a5f7-57f2fd23e8a2/air-max-270-g-golf-shoe-Z6vCfs.png",
+      "id": 3
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "id": 4
+    },
+    {
+      "name": "Truck",
+      "price": "Toy",
+      "category": "Toys",
+      "color": "Red",
+      "description": "A toy for 5 year old child",
+      "image": "https://cdn.shopify.com/s/files/1/0011/8367/8476/products/Truck2_1400x.png?v=1662789388",
+      "id": 5
+    },
+    {
+      "name": "Noise Smart Watch",
+      "price": "2000",
+      "category": "Watch",
+      "color": "Black",
+      "description": "Noise smart watch for man and women both",
+      "image": "https://www.reliancedigital.in/medias/Noise-Colorfit-Pro-2-Smart-Watch-491900986-i-1-1200Wx1200H-300Wx300H?context=bWFzdGVyfGltYWdlc3w1MDc0NXxpbWFnZS9qcGVnfGltYWdlcy9oYzkvaDdjLzk1OTE4MjA3NDY3ODIuanBnfDA3MjZlMzkzOTExYzMyNzk5Y2YzOTk0MWFkMjc5YjE5OTlkMDE4NzYzYTg1YzQ2YmNjZjMxYzc5ZDJiYjBlNDg",
+      "id": 6
+    }
+  ],
+  "users": [
+    {
+      "name": "Jai",
+      "email": "Jai@gmail.com",
+      "password": "abcd@123",
+      "id": 1
+    }
+  ]
+}

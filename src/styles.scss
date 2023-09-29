@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    
+    
+  }
+  
+  body{
+    font-family: sans-serif;
+  }
+  .signup, .login{
+    margin-top: 60px;
+    text-align: center;
+    color: blueviolet;
+  }
+  .form-input{
+    height:35px;
+    margin-bottom: 20px;
+    border: .5px solid blueviolet;
+    border-radius: 3px;
+  }
+
+  .common-form{
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 300px;
+  }
+  .form-button{
+    height:35px;
+    border: .5px solid blueviolet;
+    border-radius: 3px;
+
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
